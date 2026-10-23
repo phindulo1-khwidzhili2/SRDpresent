@@ -1,0 +1,29 @@
+SRD GRANT REDESIGN - DEMO
+=========================
+
+Open index.html in Chrome or Edge (double-click it). No internet or server needed,
+except for the font, which falls back to Arial when offline.
+
+Every form is pre-filled with dummy data, so you only need to click:
+
+  Apply (SA ID route)
+    Landing page > "South African ID Holders" > CLICK HERE TO PROCEED
+    Send me a PIN  (the PIN fills itself in)  > Verify PIN
+    Accept and continue > Save and continue > Save and continue > Submit application
+    > Check my status
+
+  Check status and manage the application
+    Check status > "Appeal this month" on June 2026 > Lodge appeal
+    Check status > Manage my application:
+      Reconfirm my details  (Yes, everything is correct)
+      Update banking details (bank account, Cash Send or collect at a store)
+      Appeal a declined month
+
+  Asylum seeker / permit route
+    Landing page > "Asylum Seekers and Special Permit Holders" > same steps
+
+  Login (top right) also opens Check status.
+
+Demo person: Thandiwe Mokoena, ID 9603145800084, cellphone 072 345 6789.
+You can type over any field; the new values carry through to later pages.
+Press F11 for full screen when presenting.

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check your status</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <svg class="deco" aria-hidden="true" viewBox="0 0 260 760" fill="none">
+    <path d="M-40 0 C 120 120, 200 260, 150 420 C 110 540, 60 620, -40 760" stroke="#0B7A3E" stroke-width="2"/>
+  </svg>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a href="status.html">Login</a><span aria-hidden="true">|</span><a href="index.html">Register</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <nav aria-label="Main">
+        <span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B7A3E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          0800 60 10 11
+        </span>
+        <a href="index.html">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B7A3E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></svg>
+          Home
+        </a>
+      </nav>
+      <img class="logo" src="images/logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <section class="subhero">
+    <img class="subhero-img" src="images/hero.jpg" alt="">
+    <div class="hero-card-row">
+      <div class="wrap hero-card">
+        <div class="hero-badge" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0B7A3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+        <div>
+          <div class="crumbs"><a href="index.html">Home</a> › <span>Check your status</span></div>
+          <h1>Check your status</h1>
+        </div>
+        <p class="subhero-lead">See the result for every month, when you were paid, and appeal a month that was declined.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="inner">
+    <div class="wrap">
+      
+
+      <section class="panel">
+        <div class="panel-main">
+          <form class="lookup" id="lookup" novalidate>
+            <div><label class="lbl" for="sid"><span data-id-label>ID number</span></label><input class="inp" id="sid" value="9603145800084"></div>
+            <div><label class="lbl" for="sph">Cellphone number</label><input class="inp" id="sph" inputmode="tel" value="072 345 6789"></div>
+            <button class="button" type="submit" id="checkBtn">Check status</button>
+          </form>
+          <div id="results" hidden>
+            <div class="who">
+              <span class="avatar" id="initials">TM</span>
+              <div><strong data-fill="name">—</strong><span>Reference <span data-fill="ref">SRD-482913</span> · Paid by <span data-fill="pay">—</span></span></div>
+              <span class="pill wait">October: pending</span>
+            </div>
+            <div class="months">
+            <div class="tile ok"><strong>Apr 2026</strong><span class="pill ok">Approved</span><span class="tile-note">Paid on 14 Apr</span></div>
+            <div class="tile ok"><strong>May 2026</strong><span class="pill ok">Approved</span><span class="tile-note">Paid on 13 May</span></div>
+            <div class="tile no"><strong>Jun 2026</strong><span class="pill no">Declined</span><span class="tile-note">Income found in your bank account</span><a class="tile-link" href="appeal.html">Appeal this month</a></div>
+            <div class="tile ok"><strong>Jul 2026</strong><span class="pill ok">Approved</span><span class="tile-note">Paid on 15 Jul</span></div>
+            <div class="tile ok"><strong>Aug 2026</strong><span class="pill ok">Approved</span><span class="tile-note">Paid on 12 Aug</span></div>
+            <div class="tile ok"><strong>Sep 2026</strong><span class="pill ok">Approved</span><span class="tile-note">Paid on 16 Sep</span></div>
+            <div class="tile wait"><strong>Oct 2026</strong><span class="pill wait">Pending</span><span class="tile-note">Still checking — nothing for you to do</span></div>
+            <div class="tile key"><strong>Each month counts on its own</strong><span class="tile-note">One declined month doesn't stop the others.</span></div>
+            </div>
+          </div>
+          <p class="hint" id="before" style="margin:0">Your details are filled in for the demo — press <strong>Check status</strong>.</p>
+        </div>
+
+        <aside class="panel-aside">
+          <h3>What the results mean</h3>
+          <ul>
+            <li><span class="pill ok">Approved</span><span>You'll be paid for that month, the way you chose.</span></li>
+            <li><span class="pill wait">Pending</span><span>We're still checking. You don't need to do anything.</span></li>
+            <li><span class="pill no">Declined</span><span>You don't qualify that month. You can appeal it.</span></li>
+          </ul>
+          <h3 style="margin-top:4px">Manage my application</h3>
+          <nav class="manage" aria-label="Manage my application">
+            <a href="reconfirm.html">Reconfirm my details <span class="pill wait">Due</span></a>
+            <a href="update-banking.html">Update banking details</a>
+            <a href="appeal.html">Appeal a declined month</a>
+          </nav>
+          <p class="hint" style="margin:0">New cellphone number? Call 0800 60 10 11 or visit a SASSA office to update it.</p>
+          <div class="help"><strong>Need help?</strong><br>Call 0800 60 10 11 for free, Monday to Friday, 08:00–16:00.</div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer>Redesign concept · not an official government website</footer>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.getElementById('checkBtn');
+  var first = SRD.get('first'), last = SRD.get('last');
+  document.getElementById('initials').textContent = (first[0] || '') + (last[0] || '');
+  if (SRD.isAsylum()) document.getElementById('sid').value = SRD.get('id');
+  document.getElementById('lookup').addEventListener('submit', function (e) {
+    e.preventDefault();
+    btn.textContent = 'Checking…'; btn.disabled = true;
+    setTimeout(function () {
+      btn.textContent = 'Check status'; btn.disabled = false;
+      document.getElementById('before').hidden = true;
+      document.getElementById('results').hidden = false;
+    }, 700);
+  });
+});
+</script>
+</body>
+</html>
